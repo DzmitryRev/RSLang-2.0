@@ -7,7 +7,7 @@ This is a remake of an existing project that I did in the course. There were a l
 
 This is not a refactoring! This is building a project from scratch.
 
-For management, I use trello, where I will form tasks and execute them. Also in the github repository there will be application architecture diagrams.
+For management, I use trello, where I will form tasks and execute them. Also in the gitHub repository there will be application architecture diagrams.
 
 In general, I will try to emulate professional product development.
 
