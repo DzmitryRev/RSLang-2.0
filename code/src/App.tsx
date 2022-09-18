@@ -9,9 +9,11 @@ function App() {
 
   return (
     <div className="app">
-      <Header type={isHeaderMinify ? 'minify' : 'default'} />
-      <div>
-        content
+      <div className="wrapper">
+        <Header type={isHeaderMinify ? 'minify' : 'default'} />
+        <div>
+          content
+        </div>
       </div>
     </div>
   );
