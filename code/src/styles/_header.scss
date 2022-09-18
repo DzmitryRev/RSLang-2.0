@@ -1,0 +1,81 @@
+.header {
+  height: 85px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f36969;
+
+  &-default {
+    & .logo-container {
+
+    }
+    & .navbar {
+      & .navbar-signInButton {
+        display: none;
+      }
+    }
+    & .burger {
+      display: none;
+    }
+    & .signInButton {
+
+    }
+  }
+  &-minify {
+    & .logo-container {
+
+    }
+
+    & .navbar {
+      position: fixed;
+      right: 0;
+      top: 85px;
+      display: none;
+      &.opened-navbar {
+        display: block;
+      }
+      & .navbar-signInButton {
+
+      }
+    }
+
+    & .burger {
+
+    }
+
+    & .signInButton {
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    &-default {
+      & .logo-container {
+
+      }
+      & .navbar {
+        position: fixed;
+        right: 0;
+        top: 85px;
+        display: none;
+        &.opened-navbar {
+          display: block;
+        }
+        & .navbar-signInButton {
+          display: block;
+        }
+      }
+      & .burger {
+        display: block;
+      }
+      & .signInButton {
+        display: none;
+      }
+    }
+  }
+}
+
