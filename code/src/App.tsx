@@ -1,25 +1,18 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import Header from './component/Header';
 
 function App() {
+  const { pathname } = useLocation();
+
+  const isHeaderMinify = !(pathname === '/' || pathname === '/textbook');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit
-          {' '}
-          <code>src/App.tsx</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header type={isHeaderMinify ? 'minify' : 'default'} />
+      <div>
+        content
+      </div>
     </div>
   );
 }
